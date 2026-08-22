@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Brook School - We Care to Care</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-phone-alt me-2 text-rust"></i> 0374-2330044
+                <span class="mx-2">|</span>
+                <i class="fas fa-envelope me-2 text-rust"></i> holy_brook@yahoo.com
+            </div>
+            <div>
+                <a href="#" class="text-dark me-2"><i class="fab fa-facebook transition-all"></i></a>
+                <a href="#" class="text-dark me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="btn btn-sm btn-portal ms-2 shadow-sm">Portal Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo1.png" alt="Logo" class="me-2" style="height: 40px; width: auto;">
+                <span>HOLY BROOK SCHOOL</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About Us</a>
+                        <ul class="dropdown-menu animate__animated animate__fadeIn">
+                            <li><a class="dropdown-item" href="about.html">School Profile</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty</a></li>
+                            <li><a class="dropdown-item" href="mandatory-disclosure.html">Mandatory Disclosure</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                    
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="admissionDropdown" role="button" data-bs-toggle="dropdown">Admissions</a>
+                        <ul class="dropdown-menu animate__animated animate__fadeIn">
+                            <li><a class="dropdown-item" href="admissions.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="apply-admission.html">Apply Online</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News & Events</a></li>
+                    
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="#" id="downloadDropdown" role="button" data-bs-toggle="dropdown">Downloads</a>
+                        <ul class="dropdown-menu animate__animated animate__fadeIn">
+                            <li><a class="dropdown-item" href="downloads.html">Resources</a></li>
+                            <li><a class="dropdown-item" href="apply-tc.html">Apply for TC</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    
+        <div class="container my-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="news.html">News</a></li>
+                    <li class="breadcrumb-item active" id="breadcrumb-title" aria-current="page">News Detail</li>
+                </ol>
+            </nav>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h1 class="mb-3 text-school fw-bold" id="news-title">Loading news article...</h1>
+                    <p class="text-gold border-bottom pb-3 fw-bold"><i class="far fa-calendar-alt me-2"></i> Published on <span id="news-date">...</span></p>
+                    
+                    <div id="news-image-container"></div>
+                    
+                    <div class="content mb-5 lead text-dark" id="news-content" style="white-space: pre-line;">
+                        Loading...
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="news.html" class="btn btn-outline-dark px-4 rounded-pill">Back to News</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">Holy Brook School</h5>
+                    <p style="font-size: 0.9em; opacity: 0.9;">We Care to Care. Established in 2005, we are committed to providing quality education with a focus on moral values and discipline.</p>
+                    <div class="mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html"><i class="fas fa-chevron-right me-2 text-warning"></i>About Us</a></li>
+                        <li><a href="admissions.html"><i class="fas fa-chevron-right me-2 text-warning"></i>Admissions</a></li>
+                        <li><a href="academics.html"><i class="fas fa-chevron-right me-2 text-warning"></i>Academics</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right me-2 text-warning"></i>Gallery</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right me-2 text-warning"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">Important Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.cbse.gov.in/" target="_blank"><i class="fas fa-external-link-alt me-2 text-warning"></i>CBSE Official</a></li>
+                        <li><a href="https://ncert.nic.in/" target="_blank"><i class="fas fa-external-link-alt me-2 text-warning"></i>NCERT</a></li>
+                        <li><a href="https://assam.gov.in/" target="_blank"><i class="fas fa-external-link-alt me-2 text-warning"></i>Assam Government</a></li>
+                        <li><a href="https://www.india.gov.in/" target="_blank"><i class="fas fa-external-link-alt me-2 text-warning"></i>Government of India</a></li>
+                        <li><a href="https://diksha.gov.in/" target="_blank"><i class="fas fa-external-link-alt me-2 text-warning"></i>DIKSHA Portal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">Contact Info</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Near St. Luke's Hospital, Pakharijan, Tinsukia, Assam - 786146</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2 text-warning"></i> 0374-2330044</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2 text-warning"></i> holy_brook@yahoo.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center">
+                <p class="mb-0 text-white-50">&copy; 2026 Holy Brook School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+    
+        <script>
+            const newsData = {
+                1: {
+                    title: "CBSE Class X and XII Board Results Declared",
+                    date: "May 15, 2026",
+                    content: `HOLY BROOK SCHOOL is proud to announce outstanding achievements by our students in the CBSE Class X and Class XII Board Examinations 2026.\n\nOnce again, our school has secured 100% pass results. The school topper for Class XII (Science Stream) scored an impressive 98.4% marks. In Class X, over 25% of our students scored above 90% aggregate marks.\n\nOur Principal, Mrs. Shamim M. Hazarika, congratulated all the students, teachers, and parents for their continuous dedication, hard work, and support. "These results reflect the collaborative efforts of our expert faculty and the dedication of our students," she stated. A special felicitation ceremony is scheduled in the school auditorium next week to honor the achievers.`,
+                    image: "images/building1.jpg"
+                },
+                2: {
+                    title: "Admissions Open for Academic Session 2026-27",
+                    date: "June 01, 2026",
+                    content: `Admissions are open for classes Babyland, Nursery, KG, Class I to IX and XI (Science, Commerce, and Humanities streams) for the academic session 2026-27.\n\nHoly Brook School offers a comprehensive and well-rounded education system focused on academic excellence, moral character, and overall personality development. We are equipped with state-of-the-art laboratories, modern smart classrooms, a spacious playground, and a highly qualified teaching faculty.\n\nRegistration forms can be procured from the school administrative office or filled online through our official website under the Admissions section. For details on eligibility and documents required, please visit our admission process page or contact school support.`,
+                    image: "images/building1.jpg"
+                },
+                3: {
+                    title: "Annual Sports Meet 'Spardha 2026' Concludes",
+                    date: "January 20, 2026",
+                    content: `The Annual Sports Meet of Holy Brook School, 'Spardha 2026', concluded yesterday after three days of thrilling track-and-field events, indoor games, and team sports.\n\nThe event was inaugurated by a march past of the four houses: Blue, Red, Green, and Yellow. Students from all age groups participated with great enthusiasm and team spirit. High jump, long jump, 100m sprint, relay race, and tug-of-war were the major attractions.\n\nBlue House emerged as the overall champion of the meet, lifting the prestigious running trophy, while Red House finished a close second. Individual champions in senior and junior categories were awarded medals and certificates during the closing ceremony.`,
+                    image: "images/building1.jpg"
+                },
+                4: {
+                    title: "Science & Art Exhibition 2026 Organized",
+                    date: "February 28, 2026",
+                    content: `Students of Holy Brook School showcased their creative and scientific talents at the Science & Art Exhibition 2026 held on the campus premises today.\n\nThe science section featured working models on solar energy systems, water recycling, smart city infrastructure, and robotics projects built by students of Classes VIII-XII. The art section was filled with beautiful paintings, hand-crafted items, sculptures, and digital art created by students of all groups.\n\nThe exhibition was highly appreciated by the chief guest, a senior professor from the local engineering college, and the visiting parents. Over 500 visitors attended the event, making it a grand success.`,
+                    image: "images/building1.jpg"
+                }
+            };
+
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            const newsId = getQueryParam('id') || 1;
+            const article = newsData[newsId];
+
+            if (article) {
+                document.getElementById('news-title').innerText = article.title;
+                document.getElementById('breadcrumb-title').innerText = article.title;
+                document.getElementById('news-date').innerText = article.date;
+                document.getElementById('news-content').innerText = article.content;
+                
+                if (article.image) {
+                    const imgContainer = document.getElementById('news-image-container');
+                    imgContainer.innerHTML = `<img src="${article.image}" class="img-fluid rounded mb-4 w-100 shadow-sm" alt="${article.title}" data-aos="zoom-in">`;
+                }
+            } else {
+                document.getElementById('news-title').innerText = "Article Not Found";
+                document.getElementById('news-content').innerText = "The news article you are looking for does not exist or has been removed.";
+            }
+        </script>
+        
+</body>
+</html>
