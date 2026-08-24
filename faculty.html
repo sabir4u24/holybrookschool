@@ -86,107 +86,721 @@
 
     <!-- Main Content -->
     <div class="container my-5">
-    <h1 class="text-center text-school mb-5 fw-bold" data-aos="fade-down">Our Faculty</h1>
-    <p class="text-center lead mb-5" data-aos="fade-up">Meet the dedicated mentors shaping the future of our students.</p>
+        <div class="text-center mb-5" data-aos="fade-down">
+            <h1 class="text-school fw-bold display-5 mb-2">Our Faculty & Staff Directory</h1>
+            <p class="lead text-muted">Meet the dedicated mentors and administration team shaping the future of our students.</p>
+            <div class="mx-auto" style="width: 80px; height: 4px; background: linear-gradient(to right, var(--primary-sage), var(--accent-gold)); border-radius: 2px;"></div>
+        </div>
 
-    <div class="row">
-        
-            <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+        <!-- Quick Stats -->
+        <div class="row g-3 mb-5 justify-content-center" data-aos="fade-up">
+            <div class="col-6 col-md-3">
+                <div class="p-3 bg-white rounded-3 shadow-sm border-start border-4 border-success text-center">
+                    <h3 class="fw-bold text-school mb-0">29</h3>
+                    <small class="text-muted fw-semibold">Total Staff</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-3 bg-white rounded-3 shadow-sm border-start border-4 border-warning text-center">
+                    <h3 class="fw-bold text-gold mb-0">27</h3>
+                    <small class="text-muted fw-semibold">Teaching Faculty</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-3 bg-white rounded-3 shadow-sm border-start border-4 border-danger text-center">
+                    <h3 class="fw-bold text-rust mb-0">2</h3>
+                    <small class="text-muted fw-semibold">Office Incharge</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter & View Controls -->
+        <div class="row mb-4 align-items-center g-3" data-aos="fade-up">
+            <div class="col-md-5">
+                <div class="input-group shadow-sm">
+                    <span class="input-group-text bg-white border-end-0"><i class="fas fa-search text-muted"></i></span>
+                    <input type="text" id="facultySearch" class="form-control border-start-0" placeholder="Search by name, designation, or subject...">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select id="roleFilter" class="form-select shadow-sm">
+                    <option value="all">All Roles & Designations</option>
+                    <option value="Principal">Principal & Vice Principal</option>
+                    <option value="Teacher">Teaching Staff</option>
+                    <option value="Office Incharge">Office Staff</option>
+                </select>
+            </div>
+            <div class="col-md-3 text-md-end">
+                <div class="btn-group shadow-sm w-100 w-md-auto" role="group">
+                    <button type="button" class="btn btn-outline-primary active" id="btnGridView"><i class="fas fa-th-large me-1"></i> Cards</button>
+                    <button type="button" class="btn btn-outline-primary" id="btnTableView"><i class="fas fa-list me-1"></i> Table</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid View -->
+        <div id="gridView" class="row g-4">
+            <!-- 1. Shamim M Hazarika -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="shamim m hazarika" data-role="Principal" data-subject="principal" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect border-top border-4 border-warning">
                     <div class="card-body p-4">
-                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background-color: #f8f9fa; border: 3px solid var(--accent-gold);">
-                            <i class="fas fa-user fa-3x text-muted"></i>
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background: #fff5e6; border: 3px solid var(--accent-gold);">
+                            <i class="fas fa-user-tie fa-2x text-warning"></i>
                         </div>
-                        <h5 class="card-title fw-bold text-school">Mrs. Shamim M. Hazarika</h5>
-                        <p class="card-text text-muted mb-1">Principal</p>
-                        <small class="text-secondary fw-bold">M.A., B.Ed</small>
+                        <span class="badge bg-warning text-dark mb-2 px-3 py-1 rounded-pill">Principal</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Shamim M Hazarika</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-bookmark me-1 text-gold"></i> Principal</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+
+            <!-- 2. Palakhi Kaushik -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="palakhi kaushik" data-role="Principal" data-subject="english" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect border-top border-4 border-warning">
                     <div class="card-body p-4">
-                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background-color: #f8f9fa; border: 3px solid var(--accent-gold);">
-                            <i class="fas fa-user fa-3x text-muted"></i>
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background: #fff5e6; border: 3px solid var(--accent-gold);">
+                            <i class="fas fa-user-tie fa-2x text-warning"></i>
                         </div>
-                        <h5 class="card-title fw-bold text-school">Mr. Rajeev Kumar</h5>
-                        <p class="card-text text-muted mb-1">Vice Principal & PGT Mathematics</p>
-                        <small class="text-secondary fw-bold">M.Sc., B.Ed</small>
+                        <span class="badge bg-warning text-dark mb-2 px-3 py-1 rounded-pill">Vice Principal</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Palakhi Kaushik</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-book me-1 text-gold"></i> English</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
+
+            <!-- 3. Abdul Tahir Hazarika -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="abdul tahir hazarika" data-role="Teacher" data-subject="sociology" data-aos="zoom-in">
                 <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
                     <div class="card-body p-4">
-                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background-color: #f8f9fa; border: 3px solid var(--accent-gold);">
-                            <i class="fas fa-user fa-3x text-muted"></i>
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-chalkboard-teacher fa-2x text-school"></i>
                         </div>
-                        <h5 class="card-title fw-bold text-school">Dr. Ananya Baruah</h5>
-                        <p class="card-text text-muted mb-1">PGT Physics</p>
-                        <small class="text-secondary fw-bold">Ph.D. in Physics</small>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Abdul Tahir Hazarika</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-book-open me-1 text-school"></i> Sociology</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
+
+            <!-- 4. Ajay Limbu -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="ajay limbu" data-role="Teacher" data-subject="karate" data-aos="zoom-in">
                 <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
                     <div class="card-body p-4">
-                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background-color: #f8f9fa; border: 3px solid var(--accent-gold);">
-                            <i class="fas fa-user fa-3x text-muted"></i>
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-running fa-2x text-school"></i>
                         </div>
-                        <h5 class="card-title fw-bold text-school">Mrs. Pinky Gogoi</h5>
-                        <p class="card-text text-muted mb-1">PGT Chemistry</p>
-                        <small class="text-secondary fw-bold">M.Sc. (Chemistry)</small>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Ajay Limbu</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-football-ball me-1 text-school"></i> Karate</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="500">
-                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+
+            <!-- 5. Anirban Dey -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="anirban dey" data-role="Office Incharge" data-subject="office incharge" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect border-top border-4 border-danger">
                     <div class="card-body p-4">
-                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background-color: #f8f9fa; border: 3px solid var(--accent-gold);">
-                            <i class="fas fa-user fa-3x text-muted"></i>
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #fdf2f2; border: 3px solid var(--highlight-rust);">
+                            <i class="fas fa-user-cog fa-2x text-rust"></i>
                         </div>
-                        <h5 class="card-title fw-bold text-school">Mr. David Smith</h5>
-                        <p class="card-text text-muted mb-1">PGT English</p>
-                        <small class="text-secondary fw-bold">M.A., B.Ed</small>
+                        <span class="badge bg-danger bg-opacity-10 text-danger mb-2 px-3 py-1 rounded-pill">Office Incharge</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Anirban Dey</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-briefcase me-1 text-rust"></i> Office Incharge</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="600">
+
+            <!-- 6. Ayan Borthakur -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="ayan borthakur" data-role="Teacher" data-subject="geography" data-aos="zoom-in">
                 <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
                     <div class="card-body p-4">
-                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background-color: #f8f9fa; border: 3px solid var(--accent-gold);">
-                            <i class="fas fa-user fa-3x text-muted"></i>
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-globe-americas fa-2x text-school"></i>
                         </div>
-                        <h5 class="card-title fw-bold text-school">Ms. Priyanka Dey</h5>
-                        <p class="card-text text-muted mb-1">TGT Social Science</p>
-                        <small class="text-secondary fw-bold">M.A., B.Ed</small>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Ayan Borthakur</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-map-marked-alt me-1 text-school"></i> Geography</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="700">
+
+            <!-- 7. B Puspanjali Rao -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="b puspanjali rao" data-role="Teacher" data-subject="hindi" data-aos="zoom-in">
                 <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
                     <div class="card-body p-4">
-                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background-color: #f8f9fa; border: 3px solid var(--accent-gold);">
-                            <i class="fas fa-user fa-3x text-muted"></i>
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-language fa-2x text-school"></i>
                         </div>
-                        <h5 class="card-title fw-bold text-school">Ms. Anku Kalar</h5>
-                        <p class="card-text text-muted mb-1">Special Educator</p>
-                        <small class="text-secondary fw-bold">B.Ed. in Special Education</small>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">B Puspanjali Rao</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-book me-1 text-school"></i> Hindi</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="800">
+
+            <!-- 8. Beauty Kumari Singh -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="beauty kumari singh" data-role="Teacher" data-subject="hindi" data-aos="zoom-in">
                 <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
                     <div class="card-body p-4">
-                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background-color: #f8f9fa; border: 3px solid var(--accent-gold);">
-                            <i class="fas fa-user fa-3x text-muted"></i>
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-language fa-2x text-school"></i>
                         </div>
-                        <h5 class="card-title fw-bold text-school">Mrs. Runa Laila Begum</h5>
-                        <p class="card-text text-muted mb-1">Counsellor & Wellness Teacher</p>
-                        <small class="text-secondary fw-bold">M.Sc. in Psychology</small>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Beauty Kumari Singh</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-book me-1 text-school"></i> Hindi</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
                     </div>
                 </div>
             </div>
+
+            <!-- 9. Binita Mazumdar -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="binita mazumdar" data-role="Teacher" data-subject="accountancy" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-calculator fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Binita Mazumdar</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-chart-line me-1 text-school"></i> Accountancy</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Dipankar Boruah -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="dipankar boruah" data-role="Teacher" data-subject="physics" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-atom fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Dipankar Boruah</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-flask me-1 text-school"></i> Physics</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Doli Medhi -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="doli medhi" data-role="Teacher" data-subject="chemistry" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-vial fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Doli Medhi</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-flask me-1 text-school"></i> Chemistry</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. Malobika Sharma -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="malobika sharma" data-role="Teacher" data-subject="all subjects" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-shapes fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Malobika Sharma</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-th me-1 text-school"></i> All subjects</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13. Md Sabir Ahmed -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="md sabir ahmed" data-role="Teacher" data-subject="computer science" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-laptop-code fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Md Sabir Ahmed</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-desktop me-1 text-school"></i> Computer Science</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14. Mitali Sen -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="mitali sen" data-role="Teacher" data-subject="all subjects" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-shapes fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Mitali Sen</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-th me-1 text-school"></i> All subjects</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15. Moupriya Das -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="moupriya das" data-role="Teacher" data-subject="art education" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-palette fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Moupriya Das</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-paint-brush me-1 text-school"></i> Art Education</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16. Namrata Sarkar -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="namrata sarkar" data-role="Teacher" data-subject="all subjects" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-shapes fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Namrata Sarkar</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-th me-1 text-school"></i> All subjects</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 17. Pallab Sharma -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="pallab sharma" data-role="Teacher" data-subject="mathematics" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-square-root-alt fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Pallab Sharma</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-subscript me-1 text-school"></i> Mathematics</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18. Payal Chakraborty -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="payal chakraborty" data-role="Teacher" data-subject="business studies" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-chart-bar fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Payal Chakraborty</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-briefcase me-1 text-school"></i> Business Studies</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 19. Priya Saha -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="priya saha" data-role="Teacher" data-subject="hindi" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-language fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Priya Saha</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-book me-1 text-school"></i> Hindi</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 20. Riki Chanda -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="riki chanda" data-role="Office Incharge" data-subject="office incharge" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect border-top border-4 border-danger">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #fdf2f2; border: 3px solid var(--highlight-rust);">
+                            <i class="fas fa-user-cog fa-2x text-rust"></i>
+                        </div>
+                        <span class="badge bg-danger bg-opacity-10 text-danger mb-2 px-3 py-1 rounded-pill">Office Incharge</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Riki Chanda</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-briefcase me-1 text-rust"></i> Office Incharge</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 21. Rinki Paul -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="rinki paul" data-role="Teacher" data-subject="political science" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-landmark fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Rinki Paul</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-balance-scale me-1 text-school"></i> Political Science</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 22. Runa Laila Begum -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="runa laila begum" data-role="Teacher" data-subject="regional language" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-atlas fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Runa Laila Begum</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-language me-1 text-school"></i> Regional Language</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 23. Sanchoita Mazumder -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="sanchoita mazumder" data-role="Teacher" data-subject="computer science" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-laptop-code fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Sanchoita Mazumder</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-desktop me-1 text-school"></i> Computer Science</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 24. Sher Bahadur Thapa -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="sher bahadur thapa" data-role="Teacher" data-subject="hindi" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-language fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Sher Bahadur Thapa</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-book me-1 text-school"></i> Hindi</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 25. Sikha Randhani -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="sikha randhani" data-role="Teacher" data-subject="psychology" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-brain fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Sikha Randhani</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-user-md me-1 text-school"></i> Psychology</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 26. Sintu Das -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="sintu das" data-role="Teacher" data-subject="music" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-music fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Sintu Das</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-guitar me-1 text-school"></i> Music</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Secondary</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 27. Sujata Chetry -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="sujata chetry" data-role="Teacher" data-subject="english" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-book-reader fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Sujata Chetry</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-book me-1 text-school"></i> English</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Post Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 28. Sumona Chakraborty -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="sumona chakraborty" data-role="Teacher" data-subject="science" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-microscope fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Sumona Chakraborty</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-flask me-1 text-school"></i> Science</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 29. Tumpa Bhattacharjee -->
+            <div class="col-lg-3 col-md-4 col-sm-6 faculty-card-item" data-name="tumpa bhattacharjee" data-role="Teacher" data-subject="all subjects" data-aos="zoom-in">
+                <div class="card h-100 border-0 shadow-sm text-center card-hover-effect">
+                    <div class="card-body p-4">
+                        <div class="rounded-circle mb-3 d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 90px; height: 90px; background-color: #f8f9fa; border: 3px solid var(--primary-sage);">
+                            <i class="fas fa-shapes fa-2x text-school"></i>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-1 rounded-pill">Teacher</span>
+                        <h5 class="card-title fw-bold text-school mb-1" style="font-size: 1.1rem;">Tumpa Bhattacharjee</h5>
+                        <p class="card-text text-muted small mb-2"><i class="fas fa-th me-1 text-school"></i> All subjects</p>
+                        <span class="badge bg-light text-secondary border fw-normal"><i class="fas fa-graduation-cap me-1"></i> Graduate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table View (Hidden by default) -->
+        <div id="tableView" class="d-none">
+            <div class="table-responsive bg-white rounded-3 shadow-sm p-3">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col" style="width: 70px;">Sl No</th>
+                            <th scope="col">Staff Name</th>
+                            <th scope="col">Academic Qualification</th>
+                            <th scope="col">Designation</th>
+                            <th scope="col">Appointed for Subject</th>
+                        </tr>
+                    </thead>
+                    <tbody id="facultyTableBody">
+                        <tr data-name="abdul tahir hazarika" data-role="Teacher" data-subject="sociology">
+                            <th scope="row">1</th>
+                            <td class="fw-semibold text-school">Abdul Tahir Hazarika</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Sociology</td>
+                        </tr>
+                        <tr data-name="ajay limbu" data-role="Teacher" data-subject="karate">
+                            <th scope="row">2</th>
+                            <td class="fw-semibold text-school">Ajay Limbu</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Karate</td>
+                        </tr>
+                        <tr data-name="anirban dey" data-role="Office Incharge" data-subject="office incharge">
+                            <th scope="row">3</th>
+                            <td class="fw-semibold text-school">Anirban Dey</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Office Incharge</td>
+                            <td>Office Incharge</td>
+                        </tr>
+                        <tr data-name="ayan borthakur" data-role="Teacher" data-subject="geography">
+                            <th scope="row">4</th>
+                            <td class="fw-semibold text-school">Ayan Borthakur</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Geography</td>
+                        </tr>
+                        <tr data-name="b puspanjali rao" data-role="Teacher" data-subject="hindi">
+                            <th scope="row">5</th>
+                            <td class="fw-semibold text-school">B Puspanjali Rao</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Hindi</td>
+                        </tr>
+                        <tr data-name="beauty kumari singh" data-role="Teacher" data-subject="hindi">
+                            <th scope="row">6</th>
+                            <td class="fw-semibold text-school">Beauty Kumari Singh</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Hindi</td>
+                        </tr>
+                        <tr data-name="binita mazumdar" data-role="Teacher" data-subject="accountancy">
+                            <th scope="row">7</th>
+                            <td class="fw-semibold text-school">Binita Mazumdar</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Accountancy</td>
+                        </tr>
+                        <tr data-name="dipankar boruah" data-role="Teacher" data-subject="physics">
+                            <th scope="row">8</th>
+                            <td class="fw-semibold text-school">Dipankar Boruah</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Physics</td>
+                        </tr>
+                        <tr data-name="doli medhi" data-role="Teacher" data-subject="chemistry">
+                            <th scope="row">9</th>
+                            <td class="fw-semibold text-school">Doli Medhi</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Chemistry</td>
+                        </tr>
+                        <tr data-name="malobika sharma" data-role="Teacher" data-subject="all subjects">
+                            <th scope="row">10</th>
+                            <td class="fw-semibold text-school">Malobika Sharma</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>All subjects</td>
+                        </tr>
+                        <tr data-name="md sabir ahmed" data-role="Teacher" data-subject="computer science">
+                            <th scope="row">11</th>
+                            <td class="fw-semibold text-school">Md Sabir Ahmed</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr data-name="mitali sen" data-role="Teacher" data-subject="all subjects">
+                            <th scope="row">12</th>
+                            <td class="fw-semibold text-school">Mitali Sen</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>All subjects</td>
+                        </tr>
+                        <tr data-name="moupriya das" data-role="Teacher" data-subject="art education">
+                            <th scope="row">13</th>
+                            <td class="fw-semibold text-school">Moupriya Das</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Art education</td>
+                        </tr>
+                        <tr data-name="namrata sarkar" data-role="Teacher" data-subject="all subjects">
+                            <th scope="row">14</th>
+                            <td class="fw-semibold text-school">Namrata Sarkar</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>All subjects</td>
+                        </tr>
+                        <tr data-name="palakhi kaushik" data-role="Principal" data-subject="english">
+                            <th scope="row">15</th>
+                            <td class="fw-semibold text-school">Palakhi Kaushik</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td><span class="badge bg-warning text-dark">Vice Principal</span></td>
+                            <td>English</td>
+                        </tr>
+                        <tr data-name="pallab sharma" data-role="Teacher" data-subject="mathematics">
+                            <th scope="row">16</th>
+                            <td class="fw-semibold text-school">Pallab Sharma</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Mathematics</td>
+                        </tr>
+                        <tr data-name="payal chakraborty" data-role="Teacher" data-subject="business studies">
+                            <th scope="row">17</th>
+                            <td class="fw-semibold text-school">Payal Chakraborty</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Business Studies</td>
+                        </tr>
+                        <tr data-name="priya saha" data-role="Teacher" data-subject="hindi">
+                            <th scope="row">18</th>
+                            <td class="fw-semibold text-school">Priya Saha</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Hindi</td>
+                        </tr>
+                        <tr data-name="riki chanda" data-role="Office Incharge" data-subject="office incharge">
+                            <th scope="row">19</th>
+                            <td class="fw-semibold text-school">Riki Chanda</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Office Incharge</td>
+                            <td>Office Incharge</td>
+                        </tr>
+                        <tr data-name="rinki paul" data-role="Teacher" data-subject="political science">
+                            <th scope="row">20</th>
+                            <td class="fw-semibold text-school">Rinki Paul</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Political Science</td>
+                        </tr>
+                        <tr data-name="runa laila begum" data-role="Teacher" data-subject="regional language">
+                            <th scope="row">21</th>
+                            <td class="fw-semibold text-school">Runa Laila Begum</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Regional Language</td>
+                        </tr>
+                        <tr data-name="sanchoita mazumder" data-role="Teacher" data-subject="computer science">
+                            <th scope="row">22</th>
+                            <td class="fw-semibold text-school">Sanchoita Mazumder</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr data-name="shamim m hazarika" data-role="Principal" data-subject="principal">
+                            <th scope="row">23</th>
+                            <td class="fw-semibold text-school">Shamim M Hazarika</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td><span class="badge bg-warning text-dark">Principal</span></td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr data-name="sher bahadur thapa" data-role="Teacher" data-subject="hindi">
+                            <th scope="row">24</th>
+                            <td class="fw-semibold text-school">Sher Bahadur Thapa</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Hindi</td>
+                        </tr>
+                        <tr data-name="sikha randhani" data-role="Teacher" data-subject="psychology">
+                            <th scope="row">25</th>
+                            <td class="fw-semibold text-school">Sikha Randhani</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Psychology</td>
+                        </tr>
+                        <tr data-name="sintu das" data-role="Teacher" data-subject="music">
+                            <th scope="row">26</th>
+                            <td class="fw-semibold text-school">Sintu Das</td>
+                            <td><span class="badge bg-light text-dark border">Secondary</span></td>
+                            <td>Teacher</td>
+                            <td>Music</td>
+                        </tr>
+                        <tr data-name="sujata chetry" data-role="Teacher" data-subject="english">
+                            <th scope="row">27</th>
+                            <td class="fw-semibold text-school">Sujata Chetry</td>
+                            <td><span class="badge bg-primary bg-opacity-10 text-primary border">Post Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>English</td>
+                        </tr>
+                        <tr data-name="sumona chakraborty" data-role="Teacher" data-subject="science">
+                            <th scope="row">28</th>
+                            <td class="fw-semibold text-school">Sumona Chakraborty</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>Science</td>
+                        </tr>
+                        <tr data-name="tumpa bhattacharjee" data-role="Teacher" data-subject="all subjects">
+                            <th scope="row">29</th>
+                            <td class="fw-semibold text-school">Tumpa Bhattacharjee</td>
+                            <td><span class="badge bg-light text-dark border">Graduate</span></td>
+                            <td>Teacher</td>
+                            <td>All subjects</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="noResults" class="text-center py-5 d-none">
+            <i class="fas fa-search-minus fa-3x text-muted mb-3"></i>
+            <h5 class="text-muted">No faculty or staff members match your filter criteria.</h5>
         </div>
     </div>
 </div>
@@ -257,6 +871,84 @@
             duration: 1000,
             once: true,
             offset: 100
+        });
+
+        // Faculty Directory Filtering & View Switcher
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnGridView = document.getElementById('btnGridView');
+            const btnTableView = document.getElementById('btnTableView');
+            const gridView = document.getElementById('gridView');
+            const tableView = document.getElementById('tableView');
+            const facultySearch = document.getElementById('facultySearch');
+            const roleFilter = document.getElementById('roleFilter');
+            const noResults = document.getElementById('noResults');
+
+            const cardItems = document.querySelectorAll('.faculty-card-item');
+            const tableRows = document.querySelectorAll('#facultyTableBody tr');
+
+            // View toggle
+            btnGridView.addEventListener('click', function() {
+                btnGridView.classList.add('active');
+                btnTableView.classList.remove('active');
+                gridView.classList.remove('d-none');
+                tableView.classList.add('d-none');
+            });
+
+            btnTableView.addEventListener('click', function() {
+                btnTableView.classList.add('active');
+                btnGridView.classList.remove('active');
+                tableView.classList.remove('d-none');
+                gridView.classList.add('d-none');
+            });
+
+            // Filter function
+            function filterFaculty() {
+                const query = facultySearch.value.toLowerCase().trim();
+                const selectedRole = roleFilter.value;
+                let visibleCount = 0;
+
+                cardItems.forEach(card => {
+                    const name = card.getAttribute('data-name') || '';
+                    const role = card.getAttribute('data-role') || '';
+                    const subject = card.getAttribute('data-subject') || '';
+                    const fullText = card.textContent.toLowerCase();
+
+                    const matchesQuery = !query || fullText.includes(query) || name.includes(query) || subject.includes(query);
+                    const matchesRole = (selectedRole === 'all') || (role === selectedRole);
+
+                    if (matchesQuery && matchesRole) {
+                        card.classList.remove('d-none');
+                        visibleCount++;
+                    } else {
+                        card.classList.add('d-none');
+                    }
+                });
+
+                tableRows.forEach(row => {
+                    const name = row.getAttribute('data-name') || '';
+                    const role = row.getAttribute('data-role') || '';
+                    const subject = row.getAttribute('data-subject') || '';
+                    const fullText = row.textContent.toLowerCase();
+
+                    const matchesQuery = !query || fullText.includes(query) || name.includes(query) || subject.includes(query);
+                    const matchesRole = (selectedRole === 'all') || (role === selectedRole);
+
+                    if (matchesQuery && matchesRole) {
+                        row.classList.remove('d-none');
+                    } else {
+                        row.classList.add('d-none');
+                    }
+                });
+
+                if (visibleCount === 0) {
+                    noResults.classList.remove('d-none');
+                } else {
+                    noResults.classList.add('d-none');
+                }
+            }
+
+            facultySearch.addEventListener('input', filterFaculty);
+            roleFilter.addEventListener('change', filterFaculty);
         });
     </script>
     
